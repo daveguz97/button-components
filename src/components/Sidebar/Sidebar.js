@@ -1,13 +1,14 @@
 import React from 'react';
 import { Nav, NavItem, NavLink } from 'reactstrap';
+import './Sidebar.scss';
 
 const Sidebar = () => {
     return (
-        <div className='Sidebar d-flex flex-column mx-4 text-center align-items-start'>
-            <div className='logo'>
+        <div className='Sidebar p-4 text-center'>
+            <div className='logo my-4'>
                 <h2>David Guzman</h2>
             </div>
-            <Nav className='d-flex flex-column align-items-center' vertical>
+            <Nav className=' nav d-flex flex-column align-items-center' vertical>
                 <NavLink disabled href='#'>
                     Colors
                 </NavLink>{' '}
@@ -17,9 +18,7 @@ const Sidebar = () => {
                 <NavLink disabled href='#'>
                     Spaces
                 </NavLink>{' '}
-                <NavLink  href='#'>
-                    Buttons
-                </NavLink>{' '}
+                <NavLink href='#'>Buttons</NavLink>{' '}
                 <NavLink disabled href='#'>
                     Inputs
                 </NavLink>{' '}

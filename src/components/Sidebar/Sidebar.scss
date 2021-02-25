@@ -1,0 +1,19 @@
+@import '../../variables';
+
+.Sidebar {
+    min-height: 100vh;
+    width: 20%;
+    background: $navbar-bg-color;
+
+    .nav {
+        min-height: 80vh;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+}
+
+@media (max-width: 768px) {
+    .Sidebar {
+        width: 100%;
+    }
+}
